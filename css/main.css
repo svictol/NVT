@@ -1,0 +1,26 @@
+/* Подключение шрифта Segoe UI */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Основные стили для текста */
+h1 {
+    font-weight: 600; /* Bold */
+}
+
+.category {
+    cursor: pointer;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #f0f0f0;
+    font-weight: 300; /* Light */
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    #main-content {
+        padding: 10px;
+    }
+}

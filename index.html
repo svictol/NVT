@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Системная интеграция, поставка IT-оборудования, перепродажа программного обеспечения.">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@300;400;600;700&display=swap">
+    <title>NZT Site</title>
+</head>
+<body>
+    <!-- Включаем header -->
+    <div id="header">
+        <!-- Include header -->
+        <?php include 'includes/header.html'; ?>
+    </div>
+
+    <!-- Основной контент -->
+    <section id="main-content">
+        <h1>Главная страница</h1>
+        <div id="categories">
+            <!-- Списки категорий для сворачивания/разворачивания -->
+            <ul>
+                <li class="category">Категория 1</li>
+                <li class="category">Категория 2</li>
+                <li class="category">Категория 3</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Включаем footer -->
+    <div id="footer">
+        <?php include 'includes/footer.html'; ?>
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
