@@ -7,12 +7,11 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@300;400;600;700&display=swap">
-    <title>NZT Site</title>
+    <title>Главная страница NVT</title>
 </head>
 <body>
-    <!-- Включаем header -->
+    <!-- Header -->
     <div id="header">
-        <!-- Include header -->
         <?php include 'includes/header.html'; ?>
     </div>
 
@@ -21,15 +20,29 @@
         <h1>Главная страница</h1>
         <div id="categories">
             <!-- Списки категорий для сворачивания/разворачивания -->
-            <ul>
+            <ul class="category-list">
                 <li class="category">Категория 1</li>
+                <ul class="hidden">
+                    <li>Подкатегория 1.1</li>
+                    <li>Подкатегория 1.2</li>
+                </ul>
+
                 <li class="category">Категория 2</li>
+                <ul class="hidden">
+                    <li>Подкатегория 2.1</li>
+                    <li>Подкатегория 2.2</li>
+                </ul>
+
                 <li class="category">Категория 3</li>
+                <ul class="hidden">
+                    <li>Подкатегория 3.1</li>
+                    <li>Подкатегория 3.2</li>
+                </ul>
             </ul>
         </div>
     </section>
 
-    <!-- Включаем footer -->
+    <!-- Footer -->
     <div id="footer">
         <?php include 'includes/footer.html'; ?>
     </div>

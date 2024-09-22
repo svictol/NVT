@@ -1,26 +1,56 @@
-/* Подключение шрифта Segoe UI */
+/* Основные стили для сайта */
 body {
     font-family: 'Segoe UI', sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
 }
 
-/* Основные стили для текста */
+/* Заголовки */
 h1 {
-    font-weight: 600; /* Bold */
+    font-weight: 600;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Стили для категорий */
+#categories {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 .category {
     cursor: pointer;
     margin: 10px 0;
-    padding: 10px;
-    background-color: #f0f0f0;
+    padding: 15px 20px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    font-size: 18px;
     font-weight: 300; /* Light */
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.category:hover {
+    background-color: #e1e1e1;
+}
+
+/* Анимация сворачивания */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul.hidden {
+    display: none;
 }
 
 /* Адаптивность */
 @media (max-width: 768px) {
-    #main-content {
+    #categories {
+        width: 100%;
         padding: 10px;
     }
 }
